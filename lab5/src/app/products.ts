@@ -10,6 +10,7 @@ export interface Product {
   link: string;
   category: Category;
   likes: number;
+  liked: boolean;
 }
 
 export const products = [
@@ -23,7 +24,8 @@ export const products = [
     addressUrl: 'https://kaspi.kz/shop/p/sony-xperia-10-iv-6-gb-128-gb-chernyi-106097707/?c=750000000#!/itemm',
     link: "https://t.me/+bX-kLs47TXVkZThi",
     category: categories[0],
-    likes: 150
+    likes: 150,
+    liked: false
   },
   {
     id: 2,
@@ -35,7 +37,8 @@ export const products = [
     addressUrl: 'https://kaspi.kz/shop/p/apple-iphone-14-pro-max-256gb-fioletovyi-106363342/?c=750000000#!/item',
     link: "https://t.me/+bX-kLs47TXVkZThi",
     category: categories[0],
-    likes: 600
+    likes: 600,
+    liked: false
   },
   {
     id: 3,
@@ -47,7 +50,8 @@ export const products = [
     addressUrl: 'https://kaspi.kz/shop/p/wanbo-t2-max-smart-projector-102028307/?c=750000000#!/item',
     link: "https://t.me/+bX-kLs47TXVkZThi",
     category: categories[0],
-    likes: 912
+    likes: 912,
+    liked: false
   },
   {
     id: 4,
@@ -59,7 +63,8 @@ export const products = [
     addressUrl: 'https://kaspi.kz/shop/p/apple-watch-series-8-45-mm-aluminum-chernyi-106362847/?c=750000000#!/item',
     link: "https://t.me/+bX-kLs47TXVkZThi",
     category: categories[0],
-    likes: 930
+    likes: 930,
+    liked: false
   },
   {
     id: 5,
@@ -71,7 +76,8 @@ export const products = [
     addressUrl: 'https://kaspi.kz/shop/p/amazon-kindle-paperwhite-2021-chernyi-102838488/?c=750000000#!/item',
     link: "https://t.me/+bX-kLs47TXVkZThi",
     category: categories[0],
-    likes: 334
+    likes: 334,
+    liked: false
   },
   {
     id: 6,
@@ -83,7 +89,8 @@ export const products = [
     addressUrl: 'https://kaspi.kz/shop/p/kitfort-kt-1110-1-zelenyi-101387309/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_kaspi_brand_desktop&gclid=CjwKCAiAl9efBhAkEiwA4Toritd-favdZZRphCwdV68sxOLFyrhZLfAhkrj0sdCJ5p4cq9OCZmS7jRoCBIkQAvD_BwE#!/item',
     link: "https://t.me/+bX-kLs47TXVkZThi",
     category: categories[1],
-    likes: 56
+    likes: 56,
+    liked: false
   },
   {
     id: 7,
@@ -95,7 +102,8 @@ export const products = [
     addressUrl: 'https://kaspi.kz/shop/p/birjusa-210kx-200-l-belyi-2800630/?c=750000000#!/item',
     link: "https://t.me/+bX-kLs47TXVkZThi",
     category: categories[1],
-    likes: 366
+    likes: 366,
+    liked: false
   },
   {
     id: 8,
@@ -107,7 +115,8 @@ export const products = [
     addressUrl: 'https://kaspi.kz/shop/p/lg-f2j3ns0w-belyi-3601511/?c=750000000#!/item',
     link: "https://t.me/+bX-kLs47TXVkZThi",
     category: categories[1],
-    likes: 456
+    likes: 456,
+    liked: false
   },
   {
     id: 9,
@@ -119,8 +128,8 @@ export const products = [
     addressUrl: 'https://kaspi.kz/shop/p/hansa-boes684620-chernyi-104986453/?c=750000000#!/item',
     link: "https://t.me/+bX-kLs47TXVkZThi",
     category: categories[1],
-    likes: 466
-
+    likes: 466,
+    liked: false
   },
 
   {
@@ -133,7 +142,8 @@ export const products = [
     addressUrl: 'https://kaspi.kz/shop/p/chayka-chaika-936-belyi-102429588/?c=750000000#!/item',
     link: "https://t.me/+bX-kLs47TXVkZThi",
     category: categories[1],
-    likes: 783
+    likes: 783,
+    liked: false
   },
 
   {
@@ -146,7 +156,8 @@ export const products = [
     addressUrl: 'https://kaspi.kz/shop/p/lenovo-ideapad-3-15ada05-81w1016nrk-chernyi-104422750/?c=750000000#!/item',
     link: "https://t.me/+bX-kLs47TXVkZThi",
     category: categories[2],
-    likes: 235
+    likes: 235,
+    liked: false
   },
   {
     id: 12,
@@ -158,7 +169,8 @@ export const products = [
     addressUrl: 'https://kaspi.kz/shop/p/acer-nitro-5-an515-58-74xd-nh-qfmer-00d-chernyi-106607259/?c=750000000#!/item',
     link: "https://t.me/+bX-kLs47TXVkZThi",
     category: categories[2],
-    likes: 264
+    likes: 264,
+    liked: false
   },
   {
     id: 13,
@@ -170,7 +182,8 @@ export const products = [
     addressUrl: 'https://kaspi.kz/shop/p/rjukzak-xiaomi-mi-classic-business-backpack-2-chernyi-100312855/?c=750000000#!/item',
     link: "https://t.me/+bX-kLs47TXVkZThi",
     category: categories[2],
-    likes: 642
+    likes: 642,
+    liked: false
   },
   {
     id: 14,
@@ -182,7 +195,8 @@ export const products = [
     addressUrl: 'https://kaspi.kz/shop/p/rjukzak-poso-ps-501-chernyi-104527604/?c=750000000#!/item',
     link: "https://t.me/+bX-kLs47TXVkZThi",
     category: categories[2],
-    likes: 345
+    likes: 345,
+    liked: false
   },
   {
     id: 15,
@@ -194,7 +208,8 @@ export const products = [
     addressUrl: 'https://kaspi.kz/shop/p/sanc-m2253-chernyi-106218784/?c=750000000#!/item',
     link: "https://t.me/+bX-kLs47TXVkZThi",
     category: categories[2],
-    likes: 23
+    likes: 23,
+    liked: false
   },
   {
     id: 16,
@@ -206,7 +221,8 @@ export const products = [
     addressUrl: 'https://kaspi.kz/shop/p/stul-zeta-c06-vi-80x46x40-sm-belyi-101748150/?c=750000000#!/item',
     link: "https://t.me/+bX-kLs47TXVkZThi",
     category: categories[3],
-    likes: 659
+    likes: 659,
+    liked: false
   },
   {
     id: 17,
@@ -218,7 +234,8 @@ export const products = [
     addressUrl: 'https://kaspi.kz/shop/p/stolz-natsional-nyi-kruglyi-001-150x150x35-sm-104292895/?c=750000000#!/item',
     link: "https://t.me/+bX-kLs47TXVkZThi",
     category: categories[3],
-    likes: 548
+    likes: 548,
+    liked: false
   },
   {
     id: 18,
@@ -230,7 +247,8 @@ export const products = [
     addressUrl: 'https://kaspi.kz/shop/p/vse-stul-ja-kz-eames-dsw-100-100x100x75-sm-belyi-100189406/?c=750000000#!/item',
     link: "https://t.me/+bX-kLs47TXVkZThi",
     category: categories[3],
-    likes: 354
+    likes: 354,
+    liked: false
   },
   {
     id: 19,
@@ -242,7 +260,8 @@ export const products = [
     addressUrl: 'https://kaspi.kz/shop/p/shkaf-44466677-160x47x200-belyi-106499833/?c=750000000#!/item',
     link: "https://t.me/+bX-kLs47TXVkZThi",
     category: categories[3],
-    likes: 978
+    likes: 978,
+    liked: false
   },
   {
     id: 20,
@@ -254,7 +273,8 @@ export const products = [
     addressUrl: 'https://kaspi.kz/shop/p/aliico-kz-n102-80x45x190-sm-belyi-108430945/?c=750000000#!/item',
     link: "https://t.me/+bX-kLs47TXVkZThi",
     category: categories[3],
-    likes: 174
+    likes: 174,
+    liked: false
   },
 ];
 

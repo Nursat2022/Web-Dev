@@ -39,6 +39,9 @@ location: any;
   }
 
   likeProduct(product: Product){
-    product.likes++;
+    if (product.liked == false) {
+      product.likes++; 
+      product.liked = true;
+    }
   }
 }
