@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import { Observable } from 'rxjs';
-import { AuthToken } from './AuthToken';
 import {Company} from "./cmodel";
 @Injectable({
   providedIn: 'root'

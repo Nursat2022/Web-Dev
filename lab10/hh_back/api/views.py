@@ -57,7 +57,6 @@ def company_vacancies(request, id):
 
 
 class VacanciesAPIView(APIView):
-
     def get(self, request):
         vacancies = Vacancy.objects.all()
         serializer = VacancySerializer(vacancies, many=True)

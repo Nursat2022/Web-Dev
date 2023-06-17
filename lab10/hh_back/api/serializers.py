@@ -11,6 +11,21 @@ class CompanySerializer(serializers.Serializer):
     city = serializers.CharField()
     address = serializers.CharField()
 
+    def create(self, validated_data):
+        company = Company.objects.create(name=validated_data.get('name', ),
+                                         description=validated_data.get('description', ),
+                                         city=validated_data.get('city', ),
+                                         address=validated_data.get('address', ))
+        return company
+
+    def update(self, instance, validated_data):
+        instance.name = validated_data.get('name', )
+        instance.description = validated_data.get('description', )
+        instance.city = validated_data.get('city', )
+        instance.address = validated_data.get('address', )
+        instance.save()
+        return instance
+
 
 class VacancySerializer(serializers.ModelSerializer):
     company = CompanySerializer(read_only=True)
